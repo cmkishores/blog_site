@@ -8,30 +8,35 @@ body {
 
 
 				}
-	title {
-			text-align:center;
-				}
-	a {
-		text-align:center;
-		color:white;
-		font-size:18px;
-	   }
-	h2 {	
-			font-family: 'Roboto';
-			text-align:left;
-			font-size: 47px;
-			padding-top: 50px;
+	
+	
+	.post {	
+			font-size: 25px;
+		
 		}
+	
 	h1 {	
-			font-family: 'Roboto';
+			
 			text-align:left;
 			font-size: 64px;
 		}
-	h3 {
-			font-size: 40px;
-			padding-top:50px;
+	
 
 		}
 	p {
 		line-height: 30px;
+	}
+	ul {
+		list-style: none;
+	
+		}
+	a {
+
+		color:white;
+	}
+	
+	.author {
+		line-height: 40px;
+		font-size:20px;
+		padding-left:70px; 
 	}

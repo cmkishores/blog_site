@@ -7,7 +7,10 @@
 		<h1>Posts</h1>
 		<ul>
 		{% for element in list_of_posts %}
-		<li> Post :{{ element.title }} Author: {{element.author }} </li>
+		<h2><a href="{% url 'detailed' element.id %}"><li class = 'post'>{{ element.title }} </li></a></h2>
+		<li class = 'author'>  Author: {{element.author }} </li>
 		{% endfor %}
 		</ul>
+
+		<a href="{% url 'addpost' %}"> Add a new post </a>
 	{% endblock body %}
