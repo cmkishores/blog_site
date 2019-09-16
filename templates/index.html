@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to my blog</title>
+</head>
+<body>
+	<h1>Posts</h1>
+		<ul>
+		{% for element in list_of_posts %}
+		<li> Post :{{ element.title }} Author: {{element.author }} </li>
+	</ul>
+
+</body>
+</html>

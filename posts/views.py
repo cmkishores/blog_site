@@ -5,7 +5,7 @@ from .models import Post
 class ListingView(ListView):
 	model = Post
 	template_name = 'index.html'
-	context_object_name = 'lists_of_posts'
+	context_object_name = 'list_of_posts'
 
 class DetailedListView(DetailView):
 	model = Post
