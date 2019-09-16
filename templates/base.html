@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="{% static 'css/base.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chilanka|Comfortaa|Dancing+Script|Pacifico|Roboto|Roboto+Mono|Titillium+Web|Ubuntu&display=swap" rel="stylesheet"> 
+
+	<title> {% block title %} {% endblock title %} </title>
+</head>
+<body>
+
+	{% block body %}
+	{% endblock body%}
+
+</body>
+</html>
+

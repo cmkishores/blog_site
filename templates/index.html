@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Welcome to my blog</title>
-</head>
-<body>
-	<h1>Posts</h1>
+ {% extends 'base.html' %}
+ {% load static %}
+	
+
+	{% block title %} Welcome to the blog! {% endblock title %}
+ 	{% block body %}
+		<h1>Posts</h1>
 		<ul>
 		{% for element in list_of_posts %}
 		<li> Post :{{ element.title }} Author: {{element.author }} </li>
 		{% endfor %}
-	</ul>
-
-</body>
-</html>
+		</ul>
+	{% endblock body %}

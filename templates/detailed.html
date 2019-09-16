@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title> {{post.title }} </title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load static %}
+
+
+	{% block title %} {{post.title }} {% endblock title %}
+
+	{% block body %}
+
 	<h1>	{{ post.title }} </h1>
 	<h3> {{ post.author }} </h3>
-	<p> {{ post.content }}
-</body>
-</html>
+	<p> {{ post.content }} </p>
+
+	{% endblock body %}
