@@ -1,8 +1,8 @@
 from django.db import models
 
-class Post(models.Models):
+class Post(models.Model):
 	title = models.CharField(max_length=50)
-	comment = models.TextField()
+	content = models.TextField()
 	author = models.EmailField()
 
 # Create your models here.
