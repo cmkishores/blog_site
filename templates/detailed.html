@@ -2,12 +2,16 @@
 {% load static %}
 
 
-	{% block title %} {{post.title }} {% endblock title %}
+	{% block title %} {{ post.title }} {% endblock title %}
 
 	{% block body %}
 
 	<h1>	{{ post.title }} </h1>
 	<h3> {{ post.author }} </h3>
 	<p> {{ post.content }} </p>
+
+
+	<a href="{% url 'update' post.pk %}">  Edit Blog Post</a>
+	<a href="{% url 'delete' post.pk %}">  Delete this Blog Post</a>
 
 	{% endblock body %}

@@ -1,0 +1,42 @@
+body {		
+    		font-family:'Roboto', sans-serif;
+			padding:50px;
+			margin:50px;
+			
+			 background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+			color:white;
+
+
+				}
+	
+	
+	.post {	
+			font-size: 25px;
+		
+		}
+	
+	h1 {	
+			
+			text-align:left;
+			font-size: 64px;
+		}
+	
+
+		}
+	p {
+		line-height: 30px;
+	}
+	ul {
+		list-style: none;
+	
+		}
+	a {
+
+		color:white;
+	}
+	
+	.author {
+		line-height: 40px;
+		font-size:20px;
+		padding-left:70px; 
+	}

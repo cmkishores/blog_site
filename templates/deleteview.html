@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title  %} Delete Post? {% endblock title  %} 
+
+{% block body %} 
+	
+	<form action="" method="post"> {% csrf_token %}
+	
+	<p> Do you want to delete <strong>{{ post.title }}</strong> ?</p>
+	<input type="submit" value="Confirm"/>
+	
+	</form>
+
+
+
+
+
+
+{% endblock body %}
