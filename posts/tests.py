@@ -1,6 +1,6 @@
 from django.test import TestCase
 from .models import Post
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 
 
 class PostTest(TestCase):
@@ -39,23 +39,24 @@ class PostTest(TestCase):
 		response = self.client.post(reverse('addpost'),{
 			'title' : 'New title',
 			'content' : 'New Content',
-			'author' : 'self.user' ,
-
-
+			'author' : 'test@gmail.com',
 			})
-		self.assertEqual(response.status_code,200)
-		self.assertContains(response,'New Content')
+		self.assertEqual(response.status_code, 302)
+		#self.assertContains(response,'New Content')
+		
 
 	def test_post_update_view(self):
-		response = self.client.post(reverse('update' , args='1'),{
+		response = self.client.post(reverse('update', args='1'),{
 			'title': 'Updated title',
 			'content' : 'Updated content',
-
 			})
+		self.assertContains(response, 'Updated title')
 		self.assertEqual(response.status_code, 200)
-
+		
 	def test_postdelete_view(self):
 		response = self.client.get(reverse('delete',args='1'))
+
+	
 		self.assertEqual(response.status_code,200)
 
 
